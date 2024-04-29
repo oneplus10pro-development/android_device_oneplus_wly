@@ -13,9 +13,6 @@ PRODUCT_PACKAGES += \
     KeyHandler \
     tri-state-key-calibrate
 
-# Kernel
-KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
@@ -58,6 +55,9 @@ PRODUCT_COPY_FILES += \
 
 # Platform
 TARGET_BOARD_PLATFORM := taro
+
+# Kernel
+KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

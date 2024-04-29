@@ -12,6 +12,8 @@ DEVICE_PATH := device/oneplus/wly
 # Display
 TARGET_SCREEN_DENSITY := 450
 
+#TARGET_NO_RECOVERY := true
+
 # DTB/O
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
